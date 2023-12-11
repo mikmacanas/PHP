@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="system.js"></script>
+</head>
+<body>
+    <!-- Create User -->
+    <h2>Create User</h2>
+    <form action="create_user.php" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Create User">
+    </form>
+
+    <!-- Read User Details -->
+    <h2>Read User Details</h2>
+    <form action="read_user.php" method="get">
+        <label for="user_id">User ID:</label><br>
+        <input type="text" id="user_id" name="user_id"><br><br>
+        <input type="submit" value="Get User">
+    </form>
+
+    <!-- Update User Information -->
+    <h2>Update User Information</h2>
+    <form action="update_user.php" method="post">
+        <label for="user_id_update">User ID:</label><br>
+        <input type="text" id="user_id_update" name="user_id_update"><br>
+        <!-- Other fields to update -->
+        <input type="submit" value="Update User">
+    </form>
+
+    <!-- Delete User -->
+    <h2>Delete User</h2>
+    <form action="delete_user.php" method="post">
+        <label for="user_id_delete">User ID:</label><br>
+        <input type="text" id="user_id_delete" name="user_id_delete"><br><br>
+        <input type="submit" value="Delete User">
+    </form>
+
+    <!-- Create Student -->
+    <h2>Create Student</h2>
+    <form action="create_student.php" method="post">
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name"><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name"><br>
+        <!-- Other student fields -->
+        <input type="submit" value="Create Student">
+    </form>
+
+    <!-- Read Student Details -->
+    <h2>Read Student Details</h2>
+    <form action="read_student.php" method="get">
+        <label for="student_id">Student ID:</label><br>
+        <input type="text" id="student_id" name="student_id"><br><br>
+        <input type="submit" value="Get Student">
+    </form>
+
+    <!-- Update Student Information -->
+    <h2>Update Student Information</h2>
+    <form action="update_student.php" method="post">
+        <label for="student_id_update">Student ID:</label><br>
+        <input type="text" id="student_id_update" name="student_id_update"><br>
+        <!-- Other fields to update -->
+        <input type="submit" value="Update Student">
+    </form>
+
+    <!-- Delete Student -->
+    <h2>Delete Student</h2>
+    <form action="delete_student.php" method="post">
+        <label for="student_id_delete">Student ID:</label><br>
+        <input type="text" id="student_id_delete" name="student_id_delete"><br><br>
+        <input type="submit" value="Delete Student">
+    </form>
+
+    <!-- Create Course -->
+    <h2>Create Course</h2>
+    <form action="create_course.php" method="post">
+        <label for="course_name">Course Name:</label><br>
+        <input type="text" id="course_name" name="course_name"><br>
+        <label for="course_description">Course Description:</label><br>
+        <textarea id="course_description" name="course_description" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Create Course">
+    </form>
+
+    <!-- Read Course Details -->
+    <h2>Read Course Details</h2>
+    <form action="read_course.php" method="get">
+        <label for="course_id">Course ID:</label><br>
+        <input type="text" id="course_id" name="course_id"><br><br>
+        <input type="submit" value="Get Course">
+    </form>
+
+    <!-- Update Course Information -->
+    <h2>Update Course Information</h2>
+    <form action="update_course.php" method="post">
+        <label for="course_id_update">Course ID:</label><br>
+        <input type="text" id="course_id_update" name="course_id_update"><br>
+        <!-- Other fields to update -->
+        <input type="submit" value="Update Course">
+    </form>
+
+    <!-- Delete Course -->
+    <h2>Delete Course</h2>
+    <form action="delete_course.php" method="post">
+        <label for="course_id_delete">Course ID:</label><br>
+        <input type="text" id="course_id_delete" name="course_id_delete"><br><br>
+        <input type="submit" value="Delete Course">
+    </form>
+
+    <!-- Create Instructor -->
+    <h2>Create Instructor</h2>
+    <form action="create_instructor.php" method="post">
+        <label for="instructor_first_name">First Name:</label><br>
+        <input type="text" id="instructor_first_name" name="instructor_first_name"><br>
+        <label for="instructor_last_name">Last Name:</label><br>
+        <input type="text" id="instructor_last_name" name="instructor_last_name"><br>
+        <!-- Other instructor fields -->
+        <input type="submit" value="Create Instructor">
+    </form>
+
+    <!-- Read Instructor Details -->
+    <h2>Read Instructor Details</h2>
+    <form action="read_instructor.php" method="get">
+        <label for="instructor_id">Instructor ID:</label><br>
+        <input type="text" id="instructor_id" name="instructor_id"><br><br>
+        <input type="submit" value="Get Instructor">
+    </form>
+
+    <!-- Update Instructor Information -->
+    <h2>Update Instructor Information</h2>
+    <form action="update_instructor.php" method="post">
+        <label for="instructor_id_update">Instructor ID:</label><br>
+        <input type="text" id="instructor_id_update" name="instructor_id_update"><br>
+        <!-- Other fields to update -->
+        <input type="submit" value="Update Instructor">
+    </form>
+
+    <!-- Delete Instructor -->
+    <h2>Delete Instructor</h2>
+    <form action="delete_instructor.php" method="post">
+        <label for="instructor_id_delete">Instructor ID:</label><br>
+        <input type="text" id="instructor_id_delete" name="instructor_id_delete"><br><br>
+        <input type="submit" value="Delete Instructor">
+    </form>
+
+    <!-- Create Enrollment -->
+    <h2>Create Enrollment</h2>
+    <form action="create_enrollment.php" method="post">
+        <label for="student_id">Student ID:</label><br>
+        <input type="text" id="student_id" name="student_id"><br>
+        <label for="course_id">Course ID:</label><br>
+        <input type="text" id="course_id" name="course_id"><br>
+        <!-- Other enrollment fields -->
+        <input type="submit" value="Create Enrollment">
+    </form>
+
+    <!-- Read Enrollment Details -->
+    <h2>Read Enrollment Details</h2>
+    <form action="read_enrollment.php" method="get">
+        <label for="enrollment_id">Enrollment ID:</label><br>
+        <input type="text" id="enrollment_id" name="enrollment_id"><br><br>
+        <input type="submit" value="Get Enrollment">
+    </form>
+
+    <!-- Update Enrollment Information -->
+    <h2>Update Enrollment Information</h2>
+    <form action="update_enrollment.php" method="post">
+        <label for="enrollment_id_update">Enrollment ID:</label><br>
+        <input type="text" id="enrollment_id_update" name="enrollment_id_update"><br>
+        <!-- Other fields to update -->
+        <input type="submit" value="Update Enrollment">
+    </form>
+
+    <!-- Delete Enrollment -->
+    <h2>Delete Enrollment</h2>
+    <form action="delete_enrollment.php" method="post">
+        <label for="enrollment_id_delete">Enrollment ID:</label><br>
+        <input type="text" id="enrollment_id_delete" name="enrollment_id_delete"><br><br>
+        <input type="submit" value="Delete Enrollment">
+    </form>
+
+</body>
+</html>
